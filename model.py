@@ -55,15 +55,18 @@ class Critic(nn.Module):
         super(Critic, self). __init__()
         self.seed = torch.manual_seed(seed)
         self.fcs1 = nn.Linear(state_size, fcs1_units)
+        # fully connected layer + the action size
         self.fc2 = nn.Linear(fcs1_units+action_size, fc2_units)
         self.fc3 = nn.Linear(fc2_units, 1)
         self.reset_parameters()
-        
+    
+    # Initialization fc
     def reset_parameters(self):
         self.fcs1.weight.data.uniform_(*hidden_init(self.fcs1))
         self.fc2.weight.data.uniform_(*hidden_init(self.fc2))
         self.fc3.weight.data.uniform_(-3e-3, 3e-3)
-        
+    
+    # action is being passed in the forward pass and being concatenated to get the value of state action pair
     def forward(self.state,action):
         """Build a critic (value) network that maps (state, action) pairs -> Q-values"""
         xs = F.relu(self.fcs1(state))
