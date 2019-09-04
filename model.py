@@ -55,7 +55,7 @@ class Critic(nn.Module):
         super(Critic, self). __init__()
         self.seed = torch.manual_seed(seed)
         self.fcs1 = nn.Linear(state_size, fcs1_units)
-        # fully connected layer + the action size
+        # fully connected layer + the action size. This will be passed in the forward pass below
         self.fc2 = nn.Linear(fcs1_units+action_size, fc2_units)
         self.fc3 = nn.Linear(fc2_units, 1)
         self.reset_parameters()
