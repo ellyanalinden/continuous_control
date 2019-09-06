@@ -67,7 +67,7 @@ class Critic(nn.Module):
         self.fc3.weight.data.uniform_(-3e-3, 3e-3)
     
     # action is being passed in the forward pass and being concatenated to get the value of state action pair
-    def forward(self.state,action):
+    def forward(self, state, action):
         """Build a critic (value) network that maps (state, action) pairs -> Q-values"""
         xs = F.relu(self.fcs1(state))
         x = torch.cat((xs, action), dim=1)
