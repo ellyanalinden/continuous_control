@@ -10,7 +10,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 # Replay buffer size
-BUFFER_SIZE = int(2e5)
+BUFFER_SIZE = int(3e5)
 # Minibatch size
 BATCH_SIZE = 128
 # Discount factor
@@ -23,14 +23,6 @@ LR_ACTOR = 2e-4
 LR_CRITIC = 2e-4
 # L2 weight decay
 WEIGHT_DECAY = 0
-# explore-exploit noise process added to act step
-#EPSILON = 1.0
-# Decay rate for noise process
-#EPSILON_DECAY = 1e-6
-# Learning timestep interval
-#LEARN_EVERY = 20
-# Number of learning passes
-#LEARN_NUM = 10
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
