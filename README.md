@@ -19,7 +19,7 @@ The agent must get an average score of +30 over 100 consecutive episodes.
 * [PyTorch](https://pytorch.org/)
 * [Reacher](https://github.com/Unity-Technologies/ml-agents)
 
-## How to start
+## How to run it
 1. Clone this repo
 2. To run this project locally, one must build their own environment.
    Below is the link to create local environment:
@@ -36,3 +36,4 @@ The agent must get an average score of +30 over 100 consecutive episodes.
 
 ## Result
 ![avgscore](https://user-images.githubusercontent.com/39072490/64750884-ab639c80-d4d7-11e9-8b9b-e06c57b07a68.jpg)
+![graph](https://user-images.githubusercontent.com/39072490/64750919-c59d7a80-d4d7-11e9-8c56-6982376b4d9f.jpg)
