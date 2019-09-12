@@ -23,10 +23,10 @@ The agent must get an average score of +30 over 100 consecutive episodes.
 1. Clone this repo
 2. To run this project locally, one must build their own environment.
    Below is the link to create local environment:
-   * Linux:
-   * Mac OSX:
-   * Windows (32bit):
-   * Windows (64bit):
+   * Linux: [Click Here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+   * Mac OSX: [Click Here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+   * Windows (32bit): [Click Here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+   * Windows (64bit): [Click Here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
 3. Execute each cells in this notebook. The average score per 100 episodes will be shown after agent training is completed. 
 
 ## Result
